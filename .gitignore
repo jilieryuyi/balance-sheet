@@ -1,0 +1,5 @@
+.idea
+.filebeat
+*.log
+filebeat
+/config/local-bak.yaml

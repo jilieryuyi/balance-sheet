@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="专业的资产负债表编制与分析视频教程和讲义下载，包含13个MP4教学视频和完整PDF讲义">
+    <meta name="keywords" content="资产负债表,财务报表分析,会计教程,财务分析,财务会计,资产负债表编制">
+    <title>资产负债表的编制与分析教程中心 | 财务会计专业学习平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #1A5F8F;
+            --secondary: #2C7DB8;
+            --accent: #FF6B35;
+            --light: #F5F9FC;
+            --dark: #2A3B47;
+            --gray: #6c757d;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background: rgba(255,255,255,0.15);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: var(--light);
+            border-bottom: 1px solid #dde5ed;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            padding: 1rem 0;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .player-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .player-header {
+            padding: 1.2rem;
+            border-bottom: 1px solid #eaeff5;
+        }
+
+        .player-header h2 {
+            font-size: 1.4rem;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+        }
+
+        .player-header h2::before {
+            content: "▶";
+            color: var(--accent);
+            margin-right: 10px;
+        }
+
+        .player-body {
+            padding: 1.2rem;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #e05a2a;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--light);
+            color: var(--dark);
+            border: 1px solid #dde5ed;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e2e8f0;
+        }
+
+        .playlist-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .playlist-header {
+            padding: 1.2rem;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .playlist-header h2 {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .playlist-header h2::before {
+            content: "📁";
+            margin-right: 10px;
+        }
+
+        .playlist-items {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .playlist-item {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid #eaeff5;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .playlist-item:hover {
+            background-color: #f8fafd;
+        }
+
+        .playlist-item.active {
+            background-color: #e8f2fc;
+            border-left: 4px solid var(--accent);
+        }
+
+        .playlist-item .number {
+            width: 28px;
+            height: 28px;
+            background-color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: 600;
+            color: var(--gray);
+        }
+
+        .playlist-item.active .number {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .playlist-item .item-title {
+            flex: 1;
+            font-weight: 500;
+        }
+
+        .playlist-item .duration {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .docs-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .docs-content {
+            padding: 1.5rem;
+        }
+
+        .docs-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .docs-header h2 {
+            font-size: 1.4rem;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+        }
+
+        .docs-header h2::before {
+            content: "📚";
+            margin-right: 10px;
+        }
+
+        .doc-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: #f8fafd;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .doc-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: var(--secondary);
+        }
+
+        .doc-info {
+            flex: 1;
+        }
+
+        .doc-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .doc-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-section h3::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.7rem;
+        }
+
+        .footer-links a {
+            color: #a3bacb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #3a4a57;
+            color: #8a9ead;
+            font-size: 0.9rem;
+        }
+
+        .module-info {
+            background: #e8f4fe;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .module-info h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            flex: 1;
+        }
+
+        .stat-item .number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item .label {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 1.5rem;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- 网站头部 -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">财务学习<span>Pro</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">主页</a></li>
+                    <li><a href="#">财务课程</a></li>
+                    <li><a href="#">财务报表</a></li>
+                    <li><a href="#">学习资源</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- 页面主题内容 -->
+<section class="hero">
+    <div class="container">
+        <h1>资产负债表的编制与分析</h1>
+        <p>全面掌握资产负债表编制技术与企业财务状况分析方法 | 13讲专业视频教程+完整PDF讲义</p>
+    </div>
+</section>
+
+<!-- 面包屑导航 -->
+<div class="container">
+    <div class="breadcrumb">
+        <a href="#">首页</a> &gt;
+        <a href="#">财务课程</a> &gt;
+        <a href="#">财务报表分析</a> &gt;
+        <span>资产负债表的编制与分析</span>
+    </div>
+</div>
+
+<!-- 模块统计信息 -->
+<div class="container">
+    <div class="stats">
+        <div class="stat-item">
+            <div class="number">13</div>
+            <div class="label">专业视频课程</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">6.5</div>
+            <div class="label">小时教学内容</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">85</div>
+            <div class="label">页讲义资料</div>
+        </div>
+        <div class="stat-item">
+            <div class="number">4.9</div>
+            <div class="label">用户评分</div>
+        </div>
+    </div>
+</div>
+
+<!-- 主要内容区域 -->
+<div class="container main-content">
+    <!-- 左侧主区域 -->
+    <div class="content-left">
+        <div class="player-section">
+            <div class="player-header">
+                <h2>第一章：资产负债表基础概念</h2>
+            </div>
+            <div class="video-container">
+                <!-- 视频播放器 -->
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="player-body">
+                <div class="module-info">
+                    <h3>本讲内容概述</h3>
+                    <p>本节课程将介绍资产负债表的基本概念与框架，讲解资产和负债的分类标准，理解所有者权益的构成要素，为后续深入学习打下坚实基础。</p>
+                </div>
+                <h3>课程资料</h3>
+                <div class="download-buttons">
+                    <a href="#" class="btn btn-primary">下载本课视频 (MP4)</a>
+                    <a href="#" class="btn btn-secondary">下载配套讲义 (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="docs-section">
+            <div class="docs-content">
+                <div class="docs-header">
+                    <h2>课程完整讲义下载</h2>
+                </div>
+                <div class="doc-item">
+                    <div class="doc-icon">📘</div>
+                    <div class="doc-info">
+                        <h3>资产负债表编制与分析 - 完整讲义</h3>
+                        <p>PDF格式 | 文件大小：15.2 MB | 共85页</p>
+                    </div>
+                    <a href="#" class="btn btn-primary">下载完整讲义</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧播放列表 -->
+    <div class="content-right">
+        <div class="playlist-section">
+            <div class="playlist-header">
+                <h2>视频课程列表</h2>
+            </div>
+            <div class="playlist-items">
+                <!-- 播放列表项 -->
+                <div class="playlist-item active">
+                    <div class="number">1</div>
+                    <div class="item-title">资产负债表基础概念</div>
+                    <div class="duration">32:15</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">2</div>
+                    <div class="item-title">资产类项目详解</div>
+                    <div class="duration">28:43</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">3</div>
+                    <div class="item-title">负债类项目解析</div>
+                    <div class="duration">35:12</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">4</div>
+                    <div class="item-title">所有者权益构成</div>
+                    <div class="duration">27:56</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">5</div>
+                    <div class="item-title">报表编制流程与方法</div>
+                    <div class="duration">42:18</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">6</div>
+                    <div class="item-title">流动资产分析技巧</div>
+                    <div class="duration">33:27</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">7</div>
+                    <div class="item-title">非流动资产评估</div>
+                    <div class="duration">38:05</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">8</div>
+                    <div class="item-title">流动负债管理分析</div>
+                    <div class="duration">31:49</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">9</div>
+                    <div class="item-title">长期负债与企业融资</div>
+                    <div class="duration">29:52</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">10</div>
+                    <div class="item-title">财务结构分析</div>
+                    <div class="duration">36:44</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">11</div>
+                    <div class="item-title">偿债能力评估方法</div>
+                    <div class="duration">34:17</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">12</div>
+                    <div class="item-title">企业资产周转率分析</div>
+                    <div class="duration">32:08</div>
+                </div>
+                <div class="playlist-item">
+                    <div class="number">13</div>
+                    <div class="item-title">综合案例分析与实务</div>
+                    <div class="duration">45:33</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="docs-section">
+            <div class="docs-content">
+                <div class="docs-header">
+                    <h2>课程资料</h2>
+                </div>
+                <div class="download-buttons">
+                    <a href="#" class="btn btn-primary">全部视频下载 (MP4)</a>
+                    <a href="#" class="btn btn-secondary">下载完整讲义 (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站尾部 -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>财务学习Pro</h3>
+                <p>提供专业的财务、会计和商业分析在线学习资源，帮助企业财务人员和个人从业者提升专业技能。</p>
+            </div>
+            <div class="footer-section">
+                <h3>热门课程</h3>
+                <ul class="footer-links">
+                    <li><a href="#">财务报表分析实务</a></li>
+                    <li><a href="#">企业财务预算编制</a></li>
+                    <li><a href="#">现金流量表全解析</a></li>
+                    <li><a href="#">企业税务筹划</a></li>
+                    <li><a href="#">财务建模与预测</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>学习资源</h3>
+                <ul class="footer-links">
+                    <li><a href="#">专业学习指南</a></li>
+                    <li><a href="#">财务报表模板</a></li>
+                    <li><a href="#">财务计算公式</a></li>
+                    <li><a href="#">案例分析库</a></li>
+                    <li><a href="#">行业分析报告</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>Email: support@financepro.edu</p>
+                <p>电话: 400-123-6789</p>
+                <p>地址: 北京市朝阳区财务大厦A座1208</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 财务学习Pro 版权所有 | 专业财务在线教育平台
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 播放列表交互效果
+    document.addEventListener('DOMContentLoaded', function() {
+        const playlistItems = document.querySelectorAll('.playlist-item');
+
+        playlistItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // 移除所有active类
+                playlistItems.forEach(i => i.classList.remove('active'));
+
+                // 给当前项添加active类
+                this.classList.add('active');
+
+                // 获取课程名称
+                const lessonTitle = this.querySelector('.item-title').textContent;
+
+                // 更新播放器标题
+                document.querySelector('.player-header h2').innerHTML =
+                    `<span class="play-icon">▶</span> ${lessonTitle}`;
+
+                // 这里可以添加实际切换视频内容的代码
+                // 实际项目中会加载对应的视频文件
+            });
+        });
+    });
+</script>
+</body>
+</html>
